@@ -55,7 +55,7 @@ export default {
       this.loading = true;
       console.log(this.keyword);
       let url =
-        "http://airbnbapidemo.azurewebsites.net/api/airbnb/listings/city/";
+        "https://pangairbnbapi.azurewebsites.net/api/airbnb/listings/city/";
       url = url + this.keyword;
       axios.get(url).then(response => {
         console.log(response.data);
