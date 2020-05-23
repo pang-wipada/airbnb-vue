@@ -6,7 +6,7 @@
           <b-input-group prepend="Listing" class="mt-3">
             <b-form-input v-model="keyword"></b-form-input>
             <b-input-group-append>
-              <b-button @click="search" variant="outline-success">Search</b-button>
+              <b-button @click="search" variant="outline-warning">Search</b-button>
             </b-input-group-append>
           </b-input-group>
         </div>
@@ -30,8 +30,9 @@
             class="mb-2"
           >
             <b-card-text>{{ list.summary.substring(0,50) + "..." }}</b-card-text>
-
-            <b-button href="#" variant="primary">View Details</b-button>
+            <router-link :to="`/detail/${list._id}`">
+              <b-button variant="primary">View Details</b-button>
+            </router-link>
           </b-card>
         </div>
       </div>

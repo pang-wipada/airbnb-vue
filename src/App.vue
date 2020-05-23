@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div id="nav">
-      <b-navbar toggleable="lg" type="dark" variant="success">
+      <b-navbar toggleable="lg" type="dark" variant="warning">
         <b-navbar-brand href="#">AirBnB</b-navbar-brand>
 
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
